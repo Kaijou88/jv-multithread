@@ -3,10 +3,10 @@ package race.condition;
 public class Main {
     public static void main(String[] args) {
         Counter counter = new Counter();
-        FirstThread firstThread = new FirstThread(counter);
-        SecondThread secondThread = new SecondThread(counter);
-        Thread thirdThread = new Thread(secondThread);
-        firstThread.start();
-        thirdThread.start();
+        ThreadClass threadClass = new ThreadClass(counter);
+        RunnableClass runnableClass = new RunnableClass(counter);
+        Thread thread = new Thread(runnableClass);
+        threadClass.start();
+        thread.start();
     }
 }

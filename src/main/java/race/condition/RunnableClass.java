@@ -2,11 +2,11 @@ package race.condition;
 
 import org.apache.log4j.Logger;
 
-public class SecondThread implements Runnable {
-    private static final Logger LOGGER = Logger.getLogger(Counter.class);
+public class RunnableClass implements Runnable {
+    private static final Logger LOGGER = Logger.getLogger(RunnableClass.class);
     private Counter value;
 
-    public SecondThread(Counter value) {
+    public RunnableClass(Counter value) {
         this.value = value;
     }
 
