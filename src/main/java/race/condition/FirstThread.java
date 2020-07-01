@@ -2,7 +2,7 @@ package race.condition;
 
 import org.apache.log4j.Logger;
 
-public class FirstThread extends Thread {
+public class ThreadClass extends Thread {
     private static final Logger LOGGER = Logger.getLogger(Counter.class);
     private Counter value;
 
